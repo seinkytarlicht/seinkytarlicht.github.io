@@ -6,7 +6,12 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   app: {
     head: {
-      meta: [],
+      meta: [
+        {
+          name: "google-site-verification",
+          content: "TvxjcFOp0xq8n1kBBUF-cdAmK0WIq_uy6mUbc1OidCQ",
+        },
+      ],
     },
   },
 });
