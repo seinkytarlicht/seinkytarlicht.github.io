@@ -19,7 +19,7 @@ useSeoMeta({
 useSchemaOrg([
   definePerson({
     name: "Seinkyt Arlicht",
-    description: "Software engineer",
+    description: "Game Developer",
     url: "https://seinkytarlicht.github.io",
     sameAs: [
       "https://bsky.app/profile/seinkytarlicht.bsky.social",
