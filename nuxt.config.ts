@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: "https://seinkytarlicht.github.io",
-    name: "My Awesome Website",
+    name: "Seinkyt Arlicht's Website",
   },
   sitemap: {
     urls: ["/lab-test-escape"],
