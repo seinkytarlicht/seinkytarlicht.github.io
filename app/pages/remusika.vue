@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const seo = reactive({
-  title: "ReMusika - Local music player at your browser | Seinkyt Arlicht",
+  title: "ReMusika - Local music player at your browser",
   desc: "ReMusika is a lightweight local music player powered by Go and Nuxt. All music playback happens locally on your device. No internet connection, external services, or additional setup required.",
 });
 
@@ -16,8 +16,9 @@ useSeoMeta({
 </script>
 
 <template>
-  <UContainer class="flex flex-col gap-3">
-    <h2 class="text-4xl">ReMusika</h2>
+  <div class="flex flex-col gap-3 my-5">
+    <h1 class="text-4xl font-semibold">ReMusika</h1>
+    <USeparator />
     <p>
       ReMusika is a lightweight local music player powered by Go and Nuxt. All
       music playback happens locally on your device.
@@ -34,5 +35,5 @@ useSeoMeta({
       class="text-sky-500"
       >Latest Release</a
     >
-  </UContainer>
+  </div>
 </template>
