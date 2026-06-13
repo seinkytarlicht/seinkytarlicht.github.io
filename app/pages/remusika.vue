@@ -1,19 +1,17 @@
 <script setup lang="ts">
-useHead({
-  title: "Seinkyt Arlicht - ReMusika",
-  meta: [
-    {
-      name: "description",
-      content:
-        "ReMusika is a lightweight local music player powered by Go and Nuxt. All music playback happens locally on your device. No internet connection, external services, or additional setup required. Simply run the application, open your browser, and start listening to your music library.",
-    },
-    { property: "og:title", content: "Seinkyt Arlicht - ReMusika" },
-    {
-      property: "og:description",
-      content:
-        "ReMusika is a lightweight local music player powered by Go and Nuxt. All music playback happens locally on your device. No internet connection, external services, or additional setup required. Simply run the application, open your browser, and start listening to your music library.",
-    },
-  ],
+const seo = reactive({
+  title: "ReMusika - Local music player at your browser | Seinkyt Arlicht",
+  desc: "ReMusika is a lightweight local music player powered by Go and Nuxt. All music playback happens locally on your device. No internet connection, external services, or additional setup required.",
+});
+
+useSeoMeta({
+  title: seo.title,
+  ogTitle: seo.title,
+  description: seo.desc,
+  ogDescription: seo.desc,
+  twitterTitle: seo.title,
+  twitterDescription: seo.desc,
+  twitterCard: "summary_large_image",
 });
 </script>
 

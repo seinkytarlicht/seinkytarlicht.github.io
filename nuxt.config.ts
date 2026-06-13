@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/ui"],
+  modules: ["@nuxt/ui", "@nuxtjs/sitemap"],
   css: ["~/assets/css/main.css"],
   app: {
     head: {
@@ -13,5 +13,12 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+  site: {
+    url: "https://seinkytarlicht.github.io",
+    name: "My Awesome Website",
+  },
+  sitemap: {
+    urls: ["/lab-test-escape"],
   },
 });

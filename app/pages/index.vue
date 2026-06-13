@@ -1,14 +1,18 @@
 <script setup lang="ts">
-useHead({
-  title: "Seinkyt Arlicht Website",
-  meta: [
-    { name: "description", content: "Nothing in here, just blank website" },
-    { property: "og:title", content: "Seinkyt Arlicht Website" },
-    {
-      property: "og:description",
-      content: "Nothing in here, just blank website",
-    },
-  ],
+const seo = reactive({
+  title: "Seinkyt Arlicht's Website",
+  desc: "Nothing in here, just blank website",
+});
+
+useSeoMeta({
+  title: seo.title,
+  ogTitle: seo.title,
+  description: seo.desc,
+  ogDescription: seo.desc,
+  ogImage: "https://seinkytarlicht.github.io/images/emilia.png",
+  twitterTitle: seo.title,
+  twitterDescription: seo.desc,
+  twitterCard: "summary_large_image",
 });
 
 const whatever = ref([
